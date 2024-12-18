@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget App</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/css/all.css" />
+  </head>
+  <body>
+    <header class="image-container">
+      <div class="header-info-cont">
+        <h2>
+          Available budget for: &nbsp;<span class="month-year">month</span>
+        </h2>
+        <h3 class="budget-left">+ 0.00</h3>
+        
+        <div class="inc-exp-container">
+          <p class="inc">
+            Income 
+            <span class="showInc">+ 0.00</span>
+            <span></span>
+          </p>
+          
+          <p class="exp">
+            Expenses 
+            <span class="showExp">- 0.00</span
+            ><span class="percentage">---</span>
+          </p>
+        </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="outer-input-container">
+      <form action="">
+        <select name="type" id="" class="type">
+          <option value="inc" selected>+</option>
+          <option value="exp">-</option>
+        </select>
+
+        <input type="text" placeholder="add description" class="add-des" />
+        <input type="number" placeholder="add value" class="add-val" />
+        <button class="add-item" type="button">Add Item</button>
+      </form>
+    </div>
+
+    <section class="item-container">
+      <div class="inc-container">
+        <h3>Income</h3>
+        <div class="inc-inner" id="inc-cont">
+          <!-- <div class="inc-item" id="inc-%id%">
+            <p>%description%</p>
+            <p>%value%</p>
+            <i class="fa fa-trash"></i>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="exp-container">
+        <h3>Expenses</h3>
+        <div class="exp-inner" id="exp-cont">
+          <!-- <div class="exp-item" id="exp-%id%">
+            <p>%description%</p>
+            <p>%value%</p>
+            <p class="item-percentage">20%</p>
+            <i class="fa fa-trash"></i>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
